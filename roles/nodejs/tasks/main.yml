@@ -1,0 +1,8 @@
+---
+
+- name: Installing nodejs in ubuntu server
+  become: true
+  shell:  "curl -fsSL https://deb.nodesource.com/setup_{{ nodejs_version }} | bash -"
+  apt: 
+    - name: nodejs
+      state: present

@@ -1,0 +1,8 @@
+---
+- name: Installing nodejs and postgres in ubuntu server
+  hosts: ubuntu
+  become: true
+
+  roles:
+    - nodejs
+    # - postgres
